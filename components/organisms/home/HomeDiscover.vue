@@ -15,7 +15,7 @@
 
     <HomeSection class="pt-40 light:bg-gray-50 dark:bg-secondary-darkest">
       <template #section-content>
-        <SectionContent class="col-span-6 items-center md:items-start justify-center">
+        <SectionContent class="col-span-12 items-center md:items-start justify-center">
           <template #category>
             <span class="text-tertiary font-bold text-lg">{{ category }}</span>
           </template>

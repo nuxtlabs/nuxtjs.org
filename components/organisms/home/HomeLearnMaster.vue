@@ -2,15 +2,25 @@
   <HomeSection class="py-20 light:bg-gray-50 dark:bg-secondary-darkest">
     <template #section-content>
       <SectionContent class="col-span-12 items-center">
-        <div class="mb-2">
-          <span class="text-tertiary font-bold text-lg">KLKLESKLSKL2S2LK</span>
-        </div>
+        <template #category>
+          <span class="text-tertiary font-bold text-lg">{{ category }}</span>
+        </template>
 
         <template #title>
-          <SectionTitle class="text-center">
-            <span class="text-primary italic">Easy </span>to learn. <span class="text-primary italic">Easy</span> to master
-          </SectionTitle>
-        </template>
+            <h2
+              class="
+                font-normal
+                text-center
+                md:text-left
+                font-serif
+                text-display-6
+                md:text-display-5
+                2xl:text-display-4
+              "
+            >
+              <Markdown use="title" unwrap="p" />
+            </h2>
+          </template>
 
         <template #paragraph>
           <p class="text-center font-normal text-body-base md:text-body-lg 2xl:text-body-xl">
@@ -24,17 +34,23 @@
 
         <template #button>
           <div class="w-full self-start">
-            <SectionButton
-              to="/docs/get-started/installation"
-              aria-label="Learn everything"
-              size="md"
-              class="bg-primary text-gray-800 font-semibold hover:bg-green-300 focus:bg-green-300"
-            >
-              Learn everything
-            </SectionButton>
+           <Markdown use="bottom" unwrap="p" />
           </div>
         </template>
       </SectionContent>
     </template>
   </HomeSection>
 </template>
+
+<script>
+import { defineComponent } from '@nuxtjs/composition-api'
+
+export default defineComponent({
+  props: {
+    category: {
+      type: String,
+      default: 'Category'
+    }
+  }
+})
+</script>
