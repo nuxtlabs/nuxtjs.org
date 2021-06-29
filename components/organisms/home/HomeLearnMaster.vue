@@ -2,21 +2,20 @@
   <HomeSection class="py-20 light:bg-gray-50 dark:bg-secondary-darkest">
     <template #section-content>
       <SectionContent class="col-span-12 items-center">
-        <template #category>
-          <span class="text-tertiary font-bold text-lg">Learn</span>
-        </template>
+        <div class="mb-2">
+          <span class="text-tertiary font-bold text-lg">KLKLESKLSKL2S2LK</span>
+        </div>
 
         <template #title>
-          <SectionTitle class="text-center"
-            ><span class="text-primary italic">Easy </span>to learn. <span class="text-primary italic">Easy</span> to
-            master</SectionTitle
-          >
+          <SectionTitle class="text-center">
+            <span class="text-primary italic">Easy </span>to learn. <span class="text-primary italic">Easy</span> to master
+          </SectionTitle>
         </template>
 
         <template #paragraph>
-          <SectionDescription class="text-center"
-            >Be part of the Nuxt.js community and help us Nuxtify the world.</SectionDescription
-          >
+          <p class="text-center font-normal text-body-base md:text-body-lg 2xl:text-body-xl">
+            <Markdown use="description" unwrap="p" />
+          </p>
         </template>
 
         <template #content>

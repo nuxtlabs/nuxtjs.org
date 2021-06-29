@@ -102,6 +102,9 @@ Nuxt development is made from passionate developers, however, the amount of effo
 ::
 
 ::home-learn-master
+category: Learn
+---description
+Be part of the Nuxt.js community and help us Nuxtify the world.
 ::
 
 ::home-learn-guides
