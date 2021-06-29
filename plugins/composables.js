@@ -1,4 +1,5 @@
 import { ref, useContext } from '@nuxtjs/composition-api'
+import { $fetch } from 'ohmyfetch'
 
 export function useNewsletter() {
   // @ts-ignore
@@ -19,8 +20,11 @@ export function useNewsletter() {
     pending.value = true
 
     try {
-      await $http.$post(`${process.env.NUXT_API || 'https://api.nuxtjs.com'}/newsletter`, {
-        email: email.value
+      await $fetch(`${process.env.NUXT_API || 'https://api.nuxtjs.com'}/newsletter`, {
+        method: 'POST',
+        body: {
+          email: email.value
+        }
       })
 
       subscribed.value = email.value
@@ -29,11 +33,11 @@ export function useNewsletter() {
       pending.value = false
       subscribed.value = false
 
-      if (e.response) {
-        const { code, name } = await e.response.json()
+      if (e.data) {
+        const { code, name } = e.data
 
-        if (code === 'member-exists') error.value = code
-        if (name === 'ValidationException') error.value = 'validation'
+        if (code === 'member-exists') error.value = 'You are already registered.'
+        if (name === 'ValidationException') error.value = 'Invalid email address'
 
         _timeout = setTimeout(() => (error.value = null), 3000)
       }
