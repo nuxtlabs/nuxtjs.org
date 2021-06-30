@@ -188,4 +188,9 @@ Discover articles from the NuxtJS Team and Nuxt.js Community about NuxtJS, tips 
 ::
 
 ::home-testimonials
+category: Community
+---title
+Testimonials
+---description
+Learn from experts what they love about Nuxt.
 ::

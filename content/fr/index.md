@@ -184,8 +184,13 @@ category: Communauté
 ---title
 Sharing is :highlight[_Caring_]
 ---description
-Lisez nos articles rédigés par l'équipe NuxtJS et la communauté!
+Lisez nos articles rédigés par l'équipe NuxtJS et la communauté
 ::
 
 ::home-testimonials
+category: Community
+---title
+Témoignages
+---description
+Découvrez ce que ces experts apprécient chez Nuxt.
 ::
