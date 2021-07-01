@@ -5,6 +5,8 @@
       sticky
       z-10
       left-0
+      top-20
+      md:top-24
       flex-none
       w-full
       text-sm
@@ -13,7 +15,6 @@
       lg:left-60
       px-4
       sm:px-6
-      pt-4
       md:pt-0
       top-header
     "
@@ -36,7 +37,7 @@
       "
       @click="showMobileToc = !showMobileToc"
     >
-      <span class="mr-2">{{ title || $t('toc.title') }}</span>
+      <span class="mr-2 md:pt-0">{{ title || $t('toc.title') }}</span>
       <IconChevronRight
         class="w-4 h-4 d-secondary-text transition-transform duration-100 transform"
         :class="[showMobileToc ? 'rotate-90' : 'rotate-0']"

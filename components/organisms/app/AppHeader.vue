@@ -1,27 +1,29 @@
 <template>
-  <header class="sticky w-full top-0 z-50 d-bg-header d-border-header h-header">
+  <header class="sticky w-full top-0 z-50 ">
     <HeaderNuxt3Banner />
-    <div class="flex flex-none d-container-content d-blur-header">
-      <NavigationButton v-if="aside" />
+    <div class="d-header">
+      <div class="flex flex-none d-container-content pt-2">
+        <NavigationButton v-if="aside" />
 
-      <div
-        :class="[aside ? 'justify-center' : 'justify-start']"
-        class="flex items-center flex-1 lg:flex-none"
-      >
-        <Logo :settings="settings" />
-      </div>
+        <div
+          :class="[aside ? 'justify-center' : 'justify-start']"
+          class="flex items-center flex-1 lg:flex-none"
+        >
+          <Logo :settings="settings" />
+        </div>
 
-      <div class="items-center hidden lg:flex lg:flex-1">
-        <HeaderNavigation />
-      </div>
+        <div class="items-center hidden lg:flex lg:flex-1">
+          <HeaderNavigation />
+        </div>
 
-      <div class="flex items-center justify-end lg:flex-none lg:w-60">
-        <AlgoliaSearchBox
-          v-if="settings.algolia"
-          :options="settings.algolia"
-          :settings="settings"
-          class="w-14 lg:px-2 ml-auto"
-        />
+        <div class="flex items-center justify-end lg:flex-none lg:w-60">
+          <AlgoliaSearchBox
+            v-if="settings.algolia"
+            :options="settings.algolia"
+            :settings="settings"
+            class="w-14 lg:px-2 ml-auto"
+          />
+        </div>
       </div>
     </div>
   </header>
