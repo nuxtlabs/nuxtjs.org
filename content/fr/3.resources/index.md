@@ -3,6 +3,7 @@ template: page
 title: Resources
 navigation:
   collapse: true
+  title: Ressources
 ---
 
 ::simple-page-hero
