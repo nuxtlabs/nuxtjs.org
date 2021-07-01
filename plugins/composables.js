@@ -13,12 +13,10 @@ export function useNewsletter() {
   const pending = ref(false)
   const apiURL = process.env.NUXT_API || 'https://api.nuxtjs.com'
 
-  console.log(query)
   const confirmSubscribtion = async (email, hash) => {
     const isLight = $colorMode.value === 'light'
     const SnackBar = () => import('@snackbar/core' /* webpackChunkName: "snackbar/core" */)
     const { createSnackbar } = await SnackBar()
-    console.log($colorMode.value)
     const showSnackbar = msg =>
       createSnackbar(msg, {
         timeout: 4000,
@@ -42,7 +40,6 @@ export function useNewsletter() {
         }
       })
   }
-  confirmSubscribtion(query.value.email, query.value.hash)
   const subscribe = async () => {
     // Cancel empty email
     if (!email.value || !email.value.trim()) return
@@ -74,6 +71,11 @@ export function useNewsletter() {
         _timeout = setTimeout(() => (error.value = null), 3000)
       }
     }
+  }
+
+
+  if (query.value.email && query.value.hash) {
+    confirmSubscribtion(query.value.email, query.value.hash)
   }
 
   return {
