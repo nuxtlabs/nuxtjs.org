@@ -1,16 +1,48 @@
 import { ref, useContext } from '@nuxtjs/composition-api'
 import { $fetch } from 'ohmyfetch'
+import '@snackbar/core/dist/snackbar.css'
 
 export function useNewsletter() {
   // @ts-ignore
-  const { $http } = useContext()
+  const { $http, $colorMode, query } = useContext()
 
   let _timeout
   const email = ref('')
   const error = ref(null)
   const subscribed = ref(false)
   const pending = ref(false)
+  const apiURL = process.env.NUXT_API || 'https://api.nuxtjs.com'
 
+  console.log(query)
+  const confirmSubscribtion = async (email, hash) => {
+    const isLight = $colorMode.value === 'light'
+    const SnackBar = () => import('@snackbar/core' /* webpackChunkName: "snackbar/core" */)
+    const { createSnackbar } = await SnackBar()
+    console.log($colorMode.value)
+    const showSnackbar = msg =>
+      createSnackbar(msg, {
+        timeout: 4000,
+        theme: {
+          backgroundColor: isLight ? '#012A35' : '#F9FAFB',
+          textColor: isLight ? '#FFFFFF' : '#003543',
+          actionColor: '#00DC82'
+        }
+      })
+
+    $fetch(`${apiURL}/newsletter/confirm`, {
+      method: 'POST',
+      body: { email, hash }
+    })
+      .then(() => showSnackbar('Email confirmed'))
+      .catch(async err => {
+        if (err.data) {
+          if (err.data.code === 'member-exists') {
+            showSnackbar('You are already registered.')
+          }
+        }
+      })
+  }
+  confirmSubscribtion(query.value.email, query.value.hash)
   const subscribe = async () => {
     // Cancel empty email
     if (!email.value || !email.value.trim()) return
@@ -20,7 +52,7 @@ export function useNewsletter() {
     pending.value = true
 
     try {
-      await $fetch(`${process.env.NUXT_API || 'https://api.nuxtjs.com'}/newsletter`, {
+      await $fetch(`${apiURL}/newsletter`, {
         method: 'POST',
         body: {
           email: email.value
