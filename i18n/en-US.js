@@ -34,7 +34,8 @@ export default {
           pre: 'An email to confirm your subscription has been sent to'
         }
       }
-    }
+    },
+    license: "NuxtJS is an open source framework under MIT license."
   },
   common: {
     an_error_occurred: 'An error occurred',
