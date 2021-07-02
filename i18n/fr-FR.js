@@ -37,6 +37,18 @@ export default {
     },
     license: "NuxtJS est un framework open source sous license MIT."
   },
+  sidebar: {
+    partners: {
+      title: "Partenaires",
+      button: "Nous soutenir"
+    },
+    ads: {
+      fallback: {
+        title: "NuxtJS a besoin de vous !",
+        description: "En autorisant nuxtjs.org sur votre bloqueur de publicité, vous soutenez notre travail et nous aidez financièrement."
+      }
+    }
+  },
   common: {
     an_error_occurred: "Une erreur s'est produite",
     page_not_found: 'La page est introuvable',
