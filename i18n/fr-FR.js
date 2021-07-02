@@ -25,7 +25,15 @@ export default {
     Training: "Support",
     newsletter: {
       title: "Inscrivez vous à la newsletter",
-      description: "Les dernières nouvelles, articles et ressources, envoyés mensuellement dans votre boîte mail."
+      description: "Les dernières nouvelles, articles et ressources, envoyés mensuellement dans votre boîte mail.",
+      form: {
+        email: 'Email',
+        subscribing: 'Inscription...',
+        subscribe: 'Inscrivez-vous',
+        subscribed_messages: {
+          pre: 'Un email de confirmation de votre inscription a été envoyé'
+        }
+      }
     }
   },
   common: {
