@@ -29,7 +29,7 @@ primary:
   url: /docs/get-started/installation
   icon: IconPlay
 ---title
-Une :highlight[_vie_] plus simple, du :highlight[_Code_] au :highlight[_Cloud_]
+Une [_vie_]{.text-primary} plus simple, du [_Code_]{.text-primary} au [_Cloud_]{.text-primary}
 ---description
 Nuxt est un framework web open source basé sur les librairies officielles Vue.js, Node.js, et de puissants outils comme Webpack, Babel and PostCSS. Nuxt rend le développement web intuitif et performant, avec toujours en tête l'expérience de développement. Déployez en une commande votre application sur de nombreuses plateformes, d'un hébergement Node.js à un site web statique.
 ::
@@ -37,7 +37,7 @@ Nuxt est un framework web open source basé sur les librairies officielles Vue.j
 ::home-features
 category: Fonctionnalités
 ---title
-Intuitive :highlight[D]eveloper E:highlight[x]perience
+Intuitive [D]{.text-primary}eveloper E[x]{.text-primary}perience
 ---description
 Nuxt contient de nombreuses fonctionnalités améliorant l'expérience de développement et l'expérience de l'utilisateur final.
 ---
@@ -94,7 +94,7 @@ Nuxt contient de nombreuses fonctionnalités améliorant l'expérience de dével
 ::home-discover-partners
 category: Partenaires
 ---title
-Un :highlight[_développement_] pérenne
+Un [_développement_]{.text-primary} pérenne
 ---description
 Nuxt est construit et maintenu par des développeurs passionnés, cependant, les effort nécessaires pour développer et maintenir de nouvelles fonctionnalités n'est pas durable sans une réelle contribution financière. Nous remercions nos sponsors et partenaires de rendre ceci possible.<br>
 ---bottom
@@ -114,7 +114,7 @@ Prenez part à la communauté Nuxt.js et aidez nous à rendre le monde plus Nuxt
 ::home-learn-guides
 category: Learn
 ---title
-Suivez nos :highlight[_Guides_]
+Suivez nos [_Guides_]{.text-primary}
 ---description
 De l'idée au chef d'oeuvre, nos guides vous indiquent la voie à suivre.
 ---
@@ -149,7 +149,7 @@ De l'idée au chef d'oeuvre, nos guides vous indiquent la voie à suivre.
 ::home-explore
 category: Explorez
 ---title
-Besoin d'aller plus loin ? Il y a tellement à :highlight[_Explorer_]
+Besoin d'aller plus loin ? Il y a tellement à [_Explorer_]{.text-primary}
 ---description
 Nuxt a beaucoup de dimensions à explorer, apprenez par l'exemple, intégrez des fournisseurs externes ou commencez plus vite avec un thème.
 ---
@@ -182,7 +182,7 @@ Nuxt a beaucoup de dimensions à explorer, apprenez par l'exemple, intégrez des
 ::home-campfire
 category: Communauté
 ---title
-Sharing is :highlight[_Caring_]
+Sharing is [_Caring_]{.text-primary}
 ---description
 Lisez nos articles rédigés par l'équipe NuxtJS et la communauté
 ::

@@ -16,16 +16,15 @@ export default {
   },
   theme: {
     header: {
-      logo: {
-        dark: '/img/header/dark/logo.svg',
-        light: '/img/header/light/logo.svg'
-      },
+      logo: true,
       title: false
     },
     colors: {
-      primary: '#00DC82'
+      primary: '#00DC82',
+      logo: '#003543'
     },
     shortcuts: {
+      'd-logo': 'w-auto h-6 md:h-7 text-logo dark:text-white',
       'd-body-bg': 'bg-white dark:bg-secondary-black',
       'd-body-text-color': 'text-secondary-darker dark:text-white', // text-secondary dark:text-white
       'd-secondary-bg': 'bg-gray-500 dark:bg-cloud-light',
@@ -39,6 +38,7 @@ export default {
         'bg-white bg-opacity-80 dark:bg-secondary-black dark:bg-opacity-80',
       'd-border':
         'light:border-gray-200 light:border-opacity-50 dark:border-secondary-darker',
+      'd-border-hover': 'border-primary-200 dark:border-secondary-dark',
       'd-border-header': 'border-none',
       'd-page-mobile-toc-bg': 'd-body-bg bg-opacity-80 dark:bg-opacity-80',
       'd-aside-header-bg': 'bg-gray-50 dark:bg-secondary-darkest',

@@ -25,7 +25,13 @@ export default {
     Training: "Training",
     newsletter: {
       title: "Subscribe to our newsletter",
-      description: "The latest news, articles, and resources, sent to your inbox monthly."
+      description: "The latest news, articles, and resources, sent to your inbox monthly.",
+      email: 'Email',
+      subscribing: 'Subscribing...',
+      subscribe: 'Subscribe',
+      subscribed_messages: {
+        pre: 'An email to confirm your subscription has been sent to'
+      }
     }
   },
   common: {
