@@ -22,7 +22,11 @@ export default {
     "Chat with us": "Chat with us",
     "Contribution guide": "Contribution guide",
     Sustainability: "Sustainability",
-    Training: "Training"
+    Training: "Training",
+    newsletter: {
+      title: "Subscribe to our newsletter",
+      description: "The latest news, articles, and resources, sent to your inbox monthly."
+    }
   },
   common: {
     an_error_occurred: 'An error occurred',
