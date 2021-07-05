@@ -41,15 +41,9 @@ export default defineComponent({
   },
   setup() {
     const { $docus } = useContext()
-
     const settings = computed(() => $docus.settings.value)
 
-    const lastRelease = computed(() => $docus.lastRelease?.value)
-
-    return {
-      settings,
-      lastRelease
-    }
+    return { settings }
   }
 })
 </script>

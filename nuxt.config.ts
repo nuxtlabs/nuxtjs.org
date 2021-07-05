@@ -107,6 +107,7 @@ export default withDocus({
       'pbs.twimg.com',
       'source.unsplash.com',
       'images.unsplash.com',
+      'github.com',
       'unsplash.com',
       'user-images.githubusercontent.com',
       'abs.twimg.com',
@@ -115,5 +116,8 @@ export default withDocus({
   },
   i18n: {
     langDir: 'i18n/'
+  },
+  build: {
+    transpile: ['ohmyfetch']
   }
 })

@@ -24,20 +24,28 @@ Build your next Vue.js application with confidence using NuxtJS.<br class="hidde
 
 ::home-discover
 category: Discover
+animationsText: [
+  It all starts with HTML and Vue components,
+  Add some style using your favorite tools,
+  Fetch content locally or from third-parties,
+  Extend Nuxt's behavior with our modules ecosystem,
+  Deploy on various platforms with confidence
+  ]
 primary:
   text: Get started
   url: /docs/get-started/installation
   icon: IconPlay
 ---title
-Easier :highlight[_Life_], from :highlight[_Code_] to :highlight[_Cloud_]
+Easier [_Life_]{.text-primary}, from [_Code_]{.text-primary} to [_Cloud_]{.text-primary}
 ---description
 Nuxt is an open source web framework based on official Vue.js libraries, Node.js and using powerful tools such as Webpack, Babel and PostCSS. Nuxt makes web development intuitive and performant with a great developer experience in mind. Deploy with one command your application to many platforms, from Node.js hosting to static websites.
+
 ::
 
 ::home-features
 category: Features
 ---title
-Intuitive :highlight[D]eveloper E:highlight[x]perience
+Intuitive [D]{.text-primary}eveloper E[x]{.text-primary}perience
 ---description
 Nuxt is shipped with plenty of features to boost developer productivity and the end user experience.
 ---
@@ -94,7 +102,7 @@ Nuxt is shipped with plenty of features to boost developer productivity and the 
 ::home-discover-partners
 category: Partners
 ---title
-Sustainable :highlight[_Development_]
+Sustainable [_Development_]{.text-primary}
 ---description
 Nuxt development is made from passionate developers, however, the amount of effort needed to maintain and develop new features is not sustainable without proper financial backing. We are thanksful to our sponsors and partners to make it possible.<br>
 ---bottom
@@ -102,12 +110,19 @@ Nuxt development is made from passionate developers, however, the amount of effo
 ::
 
 ::home-learn-master
+category: Learn
+---title
+[_Easy_]{.text-primary} &nbsp;to learn. [_Easy_]{.text-primary} to master
+---description
+Be part of the Nuxt.js community and help us Nuxtify the world.
+---bottom
+:button-link[Learn everything]{href="/docs/get-started/installation" size="medium"}
 ::
 
 ::home-learn-guides
 category: Learn
 ---title
-Follow our :highlight[_Guides_]
+Follow our [_Guides_]{.text-primary}
 ---description
 From an Idea to a Masterpiece, guides show the path to become a Nuxter.
 ---
@@ -142,7 +157,7 @@ From an Idea to a Masterpiece, guides show the path to become a Nuxter.
 ::home-explore
 category: Explore
 ---title
-Need to move Forward? So much to :highlight[_Explore_]
+Need to move Forward? So much to [_Explore_]{.text-primary}
 ---description
 Nuxt has plently of areas to explore, learn with examples, integrate with your favorite providers and start quickly with themes.
 ---
@@ -175,10 +190,15 @@ Nuxt has plently of areas to explore, learn with examples, integrate with your f
 ::home-campfire
 category: Community
 ---title
-Sharing is :highlight[_Caring_]
+Sharing is [_Caring_]{.text-primary}
 ---description
 Discover articles from the NuxtJS Team and Nuxt.js Community about NuxtJS, tips and tricks included!
 ::
 
 ::home-testimonials
+category: Community
+---title
+Testimonials
+---description
+Learn from experts what they love about Nuxt.
 ::

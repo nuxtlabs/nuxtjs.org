@@ -5,8 +5,8 @@ layout:
 navigation: false
 ---
 ::page-hero
-title: NuxtJS Team
-description: "The development of NuxtJS and its ecosystem is guided by an international team. We have a very active and engaged team that is constantly striving to push Nuxt forward."
+title: NuxtJS teams
+description: "The NuxtJS and its ecosystem development is lead by an international team. Our committed team works every day to bring NuxtJS forward."
 ---
 ::
 

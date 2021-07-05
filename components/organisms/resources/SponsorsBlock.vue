@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <p class="text-base font-semibold text-gray-900 dark:text-gray-100">Partners</p>
+    <p class="text-base font-semibold text-gray-900 dark:text-gray-100">{{ $t('sidebar.partners.title') }}</p>
     <ul class="py-2 flex flex-col space-y-2 ml-4 mb-2">
       <li v-for="partner in partners" :key="partner.title" class="">
         <a
@@ -34,7 +34,7 @@
           text-center
         "
       >
-        Support Us
+        {{ $t('sidebar.partners.button') }}
       </NuxtButton>
     </div>
   </div>
@@ -45,13 +45,13 @@ import { defineComponent, ref, useContext, useFetch } from '@nuxtjs/composition-
 
 export default defineComponent({
   setup() {
-    const { $docus } = useContext()
+    const { $docus, i18n } = useContext()
     const partners = ref()
 
     useFetch(async () => {
       partners.value = await $docus
         .search('/sponsors', { deep: true })
-        .where({ tier: { $in: ['MVP Partners', 'Partners'] } })
+        .where({ tier: { $in: ['MVP Partners', 'Partners'] }, language: i18n.locale })
         .fetch()
     })
 
