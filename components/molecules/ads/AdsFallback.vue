@@ -1,5 +1,5 @@
 <template>
-  <div class="nui-support-nuxt">
+  <div class="nui-support-nuxt light:bg-gray-100">
     <div>
       <p class="m-0 font-bold sm:text-sm d-text-primary">{{ $t('sidebar.ads.fallback.title') }}</p>
       <p class="p-0 m-0 leading-normal text-gray-600 dark:text-white sm:text-xs">
