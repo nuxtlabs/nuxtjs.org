@@ -1,13 +1,13 @@
 <template>
   <div class="py-16 d-container-content">
-    <h2 class="text-display-4 font-serif">
+    <h2 class="text-center pb-4 text-display-4 font-serif">
       <Markdown use="title" unwrap="p" />
     </h2>
-    <div class="text-center text-lg pb-16">
+    <div class="text-center text-lg pb-16 d-heading-description px-18">
       <Markdown use="description" unwrap="p" />
     </div>
     <div class="flex justify-center">
-      <div class="flex flex-wrap justify-center pb-16">
+      <div class="flex flex-wrap justify-center">
         <div v-for="member in team.members" :key="member.name">
           <TeamMember :member="member" />
         </div>
