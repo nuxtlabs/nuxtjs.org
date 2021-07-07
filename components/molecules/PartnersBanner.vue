@@ -58,8 +58,8 @@ export default defineComponent({
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-    transform: translateX(calc(-250px * 7));
+    -webkit-transform: translateX(calc(-250px * 8));
+    transform: translateX(calc(-250px * 8));
   }
 }
 
@@ -69,8 +69,8 @@ export default defineComponent({
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-    transform: translateX(calc(-250px * 7));
+    -webkit-transform: translateX(calc(-250px * 8));
+    transform: translateX(calc(-250px * 8));
   }
 }
 
