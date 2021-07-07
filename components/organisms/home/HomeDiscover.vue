@@ -40,6 +40,7 @@
                 py-4
                 w-full
                 font-normal
+                text-center
                 text-body-base
                 md:text-body-lg
                 2xl:text-body-xl
@@ -113,7 +114,7 @@
             </div>
             <div class="anim">
               <div ref="lottieAnim" class="h-96" />
-              <p class="z-20">
+              <p class="z-20 nuxt-text-highlight text-sm font-medium text-center mt-20 -mb-8 md:mb-0 md:-mt-8">
                 <Markdown :use="texts[currentIndex]" />
               </p>
             </div>
@@ -131,7 +132,7 @@
     <img
       loading="lazy"
       :src="`/img/home/discover/modules/light/landscape-discover-modules-b.svg`"
-      class="absolute left-0 z-10 object-fill w-full h-40 -mt-20 dark:hidden"
+      class="absolute left-0 z-10 object-fill w-full h-40 md:-mt-20 dark:hidden"
       alt="A landscape image"
     />
   </div>
@@ -214,7 +215,10 @@ export default defineComponent({
         loop: true,
         autoplay: false,
         path:
-          colorMode.value === 'dark' ? lottieAnimPathDark : lottieAnimPathLight
+          colorMode.value === 'dark' ? lottieAnimPathDark : lottieAnimPathLight,
+        rendererSettings: {
+          viewBoxSize: '0 0 1300 600'
+        }
       })
 
       anim.addEventListener('DOMLoaded', function () {
@@ -271,13 +275,13 @@ export default defineComponent({
       // A simple variable to fix HMR reload
       // eslint-disable-next-line no-unused-expressions
       textContent.value
-      
+
       // Get slot if it exists
       let slot = context.slots['animations-texts'] || []
 
       // Cast slot factory function
       if (typeof slot === 'function') slot = slot()
-      
+
       // Return empty array if slot broken
       if (!slot) return []
 
@@ -299,6 +303,6 @@ export default defineComponent({
 </script>
 <style lang="postcss" scoped>
 .anim {
-  @apply w-full flex flex-col justify-center items-center md:justify-end w-full;
+  @apply w-full flex flex-col-reverse md:flex-col justify-center items-center md:justify-end w-full;
 }
 </style>
