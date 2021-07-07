@@ -24,10 +24,6 @@ Build your next Vue.js application with confidence using NuxtJS.<br class="hidde
 
 ::home-discover
 category: Discover
-primary:
-  text: Get started
-  url: /docs/get-started/installation
-  icon: IconPlay
 ---title
 Easier [_Life_]{.text-primary}, from [_Code_]{.text-primary} to [_Cloud_]{.text-primary}
 ---description
