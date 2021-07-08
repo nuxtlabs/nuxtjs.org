@@ -191,7 +191,7 @@ Chaque composant page est un composant Vue, mais Nuxt.js ajoute des clés spéci
 | `validate`    | Fonction de validation pour les [Routes dynamiques](/guide/routing#routes-dynamiques).                                                                                                                                                                                                                                                                                          | [pages de l'API sur `validate`](/api/pages-validate#the-validate-method)            |
 | `middleware`  | Défini un middleware pour cette page. Ce middleware sera exécuté avant d'effectuer le rendu de la page.                                                                                                                                                                                                                                                                         | [Guide : Middleware](/guide/routing#middleware)                                     |
 
-Pour plus d'informations à propos de l'utilisation des attributs de pages, consultez [la partie Pages de l'API](/api)
+Pour plus d'informations à propos de l'utilisation des attributs de pages, consultez [la partie Pages de l'API](/docs/internals-glossary/context)
 
 ## Entête HTML
 
