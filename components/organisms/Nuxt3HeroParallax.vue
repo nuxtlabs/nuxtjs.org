@@ -12,8 +12,8 @@
       ref="gem2"
       data-speed="-5"
       loading="lazy"
-      :src="`/img/home/hero3/gem-2.svg`"
-      class="absolute left-1/3 sm:left-auto mt-4 sm:ml-0 sm:right-0 top-0 sm:mr-20 lg:mr-60 lg:mt-20"
+      :src="`/img/home/hero3/gem-6.svg`"
+      class="absolute left-1/3 sm:left-auto mt-4 sm:ml-0 sm:right-0 top-0 sm:mr-20 lg:mr-60 lg:mt-20 h-16"
       alt="An image of a green gem from nuxt galaxy"
     />
     <img
@@ -21,7 +21,7 @@
       data-speed="1"
       loading="lazy"
       :src="`/img/home/hero3/gem-3.svg`"
-      class="hidden lg:block absolute right-0 top-1/4"
+      class="hidden lg:block absolute right-16 top-1/4"
       alt="An image of a green gem from nuxt galaxy"
     />
     <img
