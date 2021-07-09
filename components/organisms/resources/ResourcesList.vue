@@ -7,10 +7,11 @@
         :title="title"
         :description="description"
         :image="image"
-        :href="localePath(href)"
+        :href="href"
       >
+      {{ href }}
         <div slot="footer" class="px-4 mb-6 h-full flex items-end">
-          <MarketingLink color="primary-green" :name="`${$t('common.go_to')} ${title}`" icon="IconChevronRight" :to="localePath(href)" size="sm" />
+          <MarketingLink color="primary-green" :name="`${$t('common.go_to')} ${title}`" icon="IconChevronRight" :to="href" size="sm" />
         </div>
       </ContentCardTemplate>
     </div>
