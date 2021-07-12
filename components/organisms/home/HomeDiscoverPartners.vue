@@ -8,7 +8,7 @@
         <h2 class="font-normal font-serif text-display-6 md:text-display-5 2xl:text-display-4 mb-2">
           <Markdown use="title" unwrap="p" />
         </h2>
-        <p class="font-normal text-center text-body-base md:text-body-lg 2xl:text-body-xl mb-8">
+        <p class="font-normal text-center text-body-base md:text-body-lg 2xl:text-body-xl mb-8 md:px-16">
           <Markdown use="description" unwrap="p" />
         </p>
         <PartnersBanner class="pb-0" :partners-logo="partners" />

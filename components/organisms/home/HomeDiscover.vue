@@ -40,6 +40,8 @@
               class="
                 py-4
                 w-full
+                px-8
+                md:px-16
                 font-normal
                 text-center
                 text-body-base

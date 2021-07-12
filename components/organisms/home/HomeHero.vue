@@ -37,15 +37,15 @@
           <SectionButton
             :to="localePath(primary.url)"
             :aria-label="primary.text"
-            size="md"
-            class="bg-primary text-gray-800 hover:bg-green-300 focus:bg-green-300"
+            size="lg"
+            class="bg-primary text-gray-800 hover:bg-green-400 focus:bg-green-400"
             :icon-left="primary.icon"
             >{{ primary.text }}</SectionButton
           >
           <SectionButton
             :to="secondary.url"
             :aria-label="secondary.text"
-            size="md"
+            size="lg"
             class="
               bg-white
               border
@@ -53,8 +53,8 @@
               shadow-sm
               border-gray-700
               text-gray-800
-              focus:bg-gray-200
-              hover:bg-gray-200
+              focus:bg-gray-100
+              hover:bg-gray-100
             "
             :icon-left="secondary.icon"
             >{{ secondary.text }}</SectionButton
