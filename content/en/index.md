@@ -1,4 +1,6 @@
 ---
+title: 'Nuxt.js - The Intuitive Vue Framework'
+description: 'Nuxt is an Open Source web framework under MIT License build on top of Vue.js. It provides an enjoyable modern web development experience with all the features you need for production.'
 template: page
 layout:
   fluid: true
