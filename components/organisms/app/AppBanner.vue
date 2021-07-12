@@ -21,7 +21,7 @@
         w-full
         pl-4
         sm:text-center
-        text-md
+        text-sm
       "
     >
       <b>Nuxt 3</b> is coming.. Discover more about it <b>here</b>!

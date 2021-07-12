@@ -2,8 +2,8 @@
   <div class="overflow-hidden relative mx-auto max-w-8xl">
     <HeroParallax />
     <div class="flex flex-wrap justify-center py-0 section">
-      <section class="flex flex-col justify-start w-full px-4 pt-36 pb-52 md:pt-44 lg:pb-56 lg:pt-52 text-center">
-        <h1 class="font-normal font-serif text-display-5 xs:text-display-4 md:text-display-3 2xl:text-display-2 mb-4">
+      <section class="flex flex-col justify-start w-full px-4 pt-36 pb-52 md:pt-44 lg:pb-56 lg:pt-48 text-center">
+        <h1 class="font-normal font-serif text-display-5 xs:text-display-4 md:text-display-3 2xl:text-display-2 mb-8 -mt-8">
           <Markdown use="title" unwrap="p" />
         </h1>
         <h2
