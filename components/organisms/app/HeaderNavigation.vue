@@ -1,10 +1,11 @@
 <template>
   <nav class="relative w-full h-full flex items-center justify-center">
     <Link
-      v-for="{ title, href, slug, blank } in links"
+      v-for="{ title, href, slug, blank, icon } in links"
       :key="slug"
       :aria-label="title"
       class="
+        group
         relative
         capitalize
         font-medium
@@ -23,8 +24,11 @@
         'text-primary': currentSlug === slug,
         'hover:d-primary-text-hover': currentSlug !== slug
       }"
-    >
-      {{ $t(`header.${title}`) }}
+      >
+        <div class="flex items-center">
+          {{ $t(`header.${title}`) }}
+          <Component v-if="icon" :is="icon" class="w-4 h-4 ml-2 text-gray-400 opacity-0 group-hover:opacity-100"/>
+        </div>
     </Link>
   </nav>
 </template>
@@ -62,7 +66,8 @@ export default defineComponent({
           title: 'Video Courses',
           slug: 'video-courses',
           href: 'https://masteringnuxt.com/?utm_source=nuxt&utm_medium=link&utm_campaign=navbar_link',
-          blank: true
+          blank: true,
+          icon: 'IconExternalLink'
         }
       ]
     }
