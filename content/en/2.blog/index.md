@@ -1,6 +1,6 @@
 ---
 template: blog
-title: NuxtJS Blog
+title: Blog
 navigation:
   collapse: true
 ---
