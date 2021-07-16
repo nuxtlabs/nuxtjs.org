@@ -12,22 +12,6 @@ export function useContributors () {
 
   console.log('contributors', contributors)
 
-
-    /*const text = await $fetch(`${apiURL}/newsletter/confirm`, {
-      method: 'POST',
-      body: { email, hash }
-    })
-      .then(res => { if (!res.ok) return []
-        return res.json()
-      })
-      .catch(async err => {
-        if (err.data) {
-          if (err.data.code === 'member-exists') {
-            showSnackbar('You are already registered.')
-          }
-        }
-      })*/
-
   return {
     contributors
   }
