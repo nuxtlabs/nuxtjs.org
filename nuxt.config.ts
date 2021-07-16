@@ -49,7 +49,10 @@ export default withDocus({
   },
   css: [resolve(__dirname, './assets/nuxt.css')],
   buildModules: ['@nuxt/typescript-build', 'vue-plausible'],
-  plugins: ['~/plugins/adblock.client'],
+  plugins: [
+    '~/plugins/adblock.client',
+    '~/plugins/contributors'
+  ],
   windicss: {
     root: resolve(__dirname),
     config: resolve(__dirname, 'windi.config.js')
