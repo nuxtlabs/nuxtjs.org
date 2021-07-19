@@ -52,9 +52,9 @@ export default ({ store }) => {
         }
 
 
-      });*/
+      });
 
-}
+    }*/
 
     if (await adsBlocked()) {
       store.commit('setAdBlocked', true)
